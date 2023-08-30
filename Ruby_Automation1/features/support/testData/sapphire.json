@@ -1,3 +1,10 @@
 {
-  "web" : "https://pk.sapphireonline.pk"
+  "web" : "https://pk.sapphireonline.pk",
+  "email" : "abcd@systemsltd.com",
+  "fname" : "Systems",
+  "lname" : "Limited",
+  "address" : "Muhammad Ali Society, Karachi",
+  "city" : "Karachi",
+  "zipcode" : "75300",
+  "phonenum" : "03000000000"
 }

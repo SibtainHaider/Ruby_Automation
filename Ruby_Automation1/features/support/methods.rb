@@ -3,7 +3,6 @@ require "json"
 
 def file_read(web_name, file_name)
   config_file_path = 'features/support/' + file_name + '.json'
-
   begin
     config_data = File.read(config_file_path)
     config = JSON.parse(config_data)
@@ -14,11 +13,20 @@ def file_read(web_name, file_name)
     puts "Invalid JSON format in the config file."
     exit
   end
-  url = config[web_name]
-  return url
+  value = config[web_name]
+  return value
+end
+
+def writer(data, container)
+  container.send_keys(data)
 end
 
 
-# def clicker(button)
-#   button
-# end
+def file_mod(file_name)
+  file_name.gsub(" ", "")
+end
+
+
+def data_mod(data)
+  data.gsub(" ", ".")
+end

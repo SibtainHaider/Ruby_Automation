@@ -3,10 +3,10 @@ require 'selenium-webdriver'
 
 Before do |scenario|
   browser = Selenium::WebDriver.for :chrome
-  $browser = browser
-  $browser.manage.window.maximize
+  $driver = browser
+  $driver.manage.window.maximize
 end
 
 After do |scenario|
-  $browser.close
+  $driver.close
 end
