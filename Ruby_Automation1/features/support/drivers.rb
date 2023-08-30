@@ -22,3 +22,7 @@ def switch_to_parent_window
   $driver.switch_to.window(parent)
 end
 
+def select_dropdown(data, xpath)
+  select = Select(xpath)
+  select.select_by(:test, data)
+end
