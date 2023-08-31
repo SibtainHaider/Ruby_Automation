@@ -1,0 +1,4 @@
+{
+  "Verify.API" : "https://reqres.in/api/users",
+  "API.put" : "https://reqres.in/api/users/2"
+}

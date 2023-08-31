@@ -1,7 +1,7 @@
 require 'selenium-webdriver'
 require "json"
 
-def file_read(web_name, file_name)
+def file_read(var_name, file_name)
   config_file_path = 'features/support/' + file_name + '.json'
   begin
     config_data = File.read(config_file_path)
@@ -13,8 +13,15 @@ def file_read(web_name, file_name)
     puts "Invalid JSON format in the config file."
     exit
   end
-  value = config[web_name]
+  value = config[var_name]
   return value
+end
+
+def json_data_get(file_path)
+  config_file_path = 'features/support/' + file_path + '.json'
+  json_data = File.read(config_file_path)
+  parsed_data = JSON.parse(json_data)
+  return parsed_data
 end
 
 def writer(data, container)

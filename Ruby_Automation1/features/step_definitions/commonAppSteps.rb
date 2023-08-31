@@ -1,4 +1,3 @@
-require_relative '../support/methods'
 require 'json'
 require 'rspec/expectations'
 

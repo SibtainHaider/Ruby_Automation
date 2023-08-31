@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'selenium-webdriver'
+require 'net/http'
 
 Before do |scenario|
   browser = Selenium::WebDriver.for :chrome
