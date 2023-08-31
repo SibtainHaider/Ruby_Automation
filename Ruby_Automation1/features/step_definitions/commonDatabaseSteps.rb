@@ -13,11 +13,7 @@ Given('User verifies {string} operations with {string} on {string} with {string}
   ex_output_get = file_read(expected_output_update, file_name)
 
   db_connection = PG.connect(
-    dbname: 'abcd',
-    user: 'postgres',
-    password: 'abcd@1234',
-    port: 5432,
-    host: 'localhost'
+    database_credentials_get
   )
   puts("the query is: ",query_get)
   result = db_connection.exec(query_get)

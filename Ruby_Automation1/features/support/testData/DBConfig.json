@@ -1,10 +1,10 @@
 {
   "DB": {
-    "database" : "MBLLOS_EH_S",
-    "user" : "sa",
-    "password" : "abcd@1234",
-    "port" : 1433,
-    "server" : "192.168.12.187"
+    "dbname": "abcd",
+    "user": "postgres",
+    "password": "abcd@1234",
+    "port": 5432,
+    "host": "localhost"
   },
   "DB.Query" : "select order_id from orders where customer_id = 101",
   "Expected.Output" : "1"
