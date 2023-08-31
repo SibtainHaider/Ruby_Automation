@@ -2,8 +2,10 @@ require 'json'
 require 'rspec/expectations'
 
 Given('User is on the {string} page on {string}') do |web_name, filename|
-  file_name = 'testData/'+filename
-  website = file_read(web_name, file_name)
+  file_name_update = file_mod(filename)
+  file_name = 'testData/'+file_name_update
+  web_name_update = data_mod(web_name)
+  website = file_read(web_name_update, file_name)
   $driver.get(website)
 end
 

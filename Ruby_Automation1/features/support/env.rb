@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'selenium-webdriver'
 require 'net/http'
+# require 'pg'
 
 Before do |scenario|
   browser = Selenium::WebDriver.for :chrome
