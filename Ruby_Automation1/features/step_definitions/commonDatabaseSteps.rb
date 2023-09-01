@@ -18,9 +18,7 @@ Given('User verifies {string} operations with {string} on {string} with {string}
   puts("the query is: ",query_get)
   result = db_connection.exec(query_get)
 
-  expected_output = [
-    ex_output_get
-  ]
+  expected_output = ex_output_get
   result.each do |row|
     puts row['order_id']
   end
