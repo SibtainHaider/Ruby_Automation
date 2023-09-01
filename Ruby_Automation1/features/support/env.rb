@@ -13,7 +13,7 @@ Before do |scenario|
 
   case driver
   when 'mobile/desktop'
-    platform_Name = file_read(platformName,file_name)
+    platform_Name = file_read("platformName", file_name)
     puts(platform_Name)
     app_name = file_read("appium:app",file_name)
     platform_version = file_read('appium:platformVersion',file_name)
@@ -49,6 +49,6 @@ Before do |scenario|
 end
 
 After do |scenario|
-  $driver.close
+  $driver.driver_quit
 end
 

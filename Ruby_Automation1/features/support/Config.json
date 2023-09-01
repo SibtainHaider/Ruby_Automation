@@ -1,10 +1,8 @@
 {
-  "Capabilities": {
-    "platformName": "Windows",
-    "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
-    "appium:deviceName": "KHILT-2519",
-    "appium:platformVersion": ""
-  },
+  "platformName": "Windows",
+  "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+  "appium:deviceName": "KHILT-2519",
+  "appium:platformVersion": "",
   "source" : "mobile/desktop",
   "appium_driver_url" : "http://127.0.0.1:4723/wd/hub",
   "selenium_driver" : "Edge"
